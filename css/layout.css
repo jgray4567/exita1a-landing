@@ -1,0 +1,153 @@
+/* ==========================================================================
+   A1A.realty — Layout & Structure
+   Grid systems, containers, sections, and structural patterns.
+   ========================================================================== */
+
+/* ── Body ──────────────────────────────────────────────────────────────── */
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: var(--weight-regular);
+  color: var(--color-silver);
+  background-color: var(--color-void);
+  letter-spacing: var(--tracking-normal);
+  line-height: var(--leading-normal);
+}
+
+/* ── Container ─────────────────────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.container--narrow {
+  max-width: var(--container-narrow);
+}
+
+.container--wide {
+  max-width: var(--container-wide);
+}
+
+/* ── Sections ──────────────────────────────────────────────────────────── */
+.section {
+  padding: var(--section-padding);
+  position: relative;
+}
+
+.section--dark {
+  background: var(--color-obsidian);
+}
+
+.section--darker {
+  background: var(--color-void);
+}
+
+.section--gradient {
+  background: var(--gradient-section);
+}
+
+.section__header {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 0 var(--space-4xl);
+}
+
+.section__overline {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-lg);
+}
+
+.section__overline::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+.section__title {
+  font-size: var(--text-display);
+  font-weight: var(--weight-extrabold);
+  color: var(--color-white);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+  margin-bottom: var(--space-lg);
+}
+
+.section__subtitle {
+  font-size: var(--text-body-lg);
+  color: var(--color-ash);
+  line-height: var(--leading-relaxed);
+  max-width: 640px;
+}
+
+/* ── Grid Systems ──────────────────────────────────────────────────────── */
+.grid {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--2-1 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.grid--1-2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+/* ── Flex Utilities ────────────────────────────────────────────────────── */
+.flex {
+  display: flex;
+}
+
+.flex--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex--col {
+  flex-direction: column;
+}
+
+.flex--gap-sm { gap: var(--space-sm); }
+.flex--gap-md { gap: var(--space-md); }
+.flex--gap-lg { gap: var(--space-lg); }
+.flex--gap-xl { gap: var(--space-xl); }
+
+/* ── Dividers ──────────────────────────────────────────────────────────── */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+  margin: var(--space-4xl) 0;
+}
+
+.divider--accent {
+  background: linear-gradient(90deg, transparent, rgba(0,163,255,0.2), transparent);
+}

@@ -1,179 +1,740 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exit A1A — The Road Home</title>
-    <meta
-      name="description"
-      content="Exit A1A — The Road Home. Clean, modern real estate intelligence platform. Coming Soon."
-    />
-    <meta property="og:title" content="Exit A1A — The Road Home" />
-    <meta property="og:description" content="A cleaner route to real estate growth. Coming Soon." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://exita1a.com/" />
-    <meta property="og:image" content="https://exita1a.com/A1A.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Exit A1A — The Road Home" />
-    <meta name="twitter:description" content="A cleaner route to real estate growth. Coming Soon." />
-    <meta name="twitter:image" content="https://exita1a.com/A1A.png" />
-    <style>
-      :root {
-        --text: #0f172a;
-        --muted: #475569;
-        --line: rgba(15, 23, 42, 0.12);
-        --accent: #0d7ff2;
-        --accent-2: #3aa1ff;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-      * {
-        box-sizing: border-box;
-      }
+  <!-- Primary SEO -->
+  <title>A1A | AI-Powered Real Estate Automation Platform</title>
+  <meta name="description" content="A1A is the most advanced AI-powered real estate automation platform. Eliminate manual work, automate marketing, and dominate your market. Limited access for select agents and brokerages.">
+  <meta name="keywords" content="real estate AI, real estate automation, CMA automation, listing management, agent productivity, brokerage technology, real estate marketing automation, AI-powered CRM">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="A1A">
+  <link rel="canonical" href="https://a1a.com/">
 
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        min-height: 100%;
-        font-family: Inter, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
-          Roboto, Helvetica, Arial, sans-serif;
-        color: #111827;
-        background:
-          radial-gradient(1000px 500px at 50% -10%, #eef3f8 0%, rgba(238, 243, 248, 0) 60%),
-          linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
-      }
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://a1a.com/">
+  <meta property="og:title" content="A1A | The Operating System for Dominant Real Estate Teams">
+  <meta property="og:description" content="AI-powered automation that eliminates manual work, generates your marketing, and gives you an unfair advantage. Limited access.">
+  <meta property="og:image" content="https://a1a.com/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="A1A">
+  <meta property="og:locale" content="en_US">
 
-      .wrap {
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        padding: 24px;
-      }
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="A1A | AI-Powered Real Estate Automation">
+  <meta name="twitter:description" content="The most advanced AI platform for real estate agents and brokerages. Eliminate friction. Dominate your market.">
+  <meta name="twitter:image" content="https://a1a.com/images/og-image.jpg">
 
-      .card {
-        width: min(980px, 100%);
-        border: 1px solid var(--line);
-        background: linear-gradient(180deg, #ffffff, #f8fafc);
-        border-radius: 28px;
-        box-shadow:
-          0 24px 60px rgba(15, 23, 42, 0.14),
-          inset 0 1px 0 rgba(255, 255, 255, 0.85);
-        overflow: hidden;
-      }
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
-      .hero {
-        padding: 56px 28px 64px;
-        display: grid;
-        gap: 28px;
-        justify-items: center;
-        text-align: center;
-      }
+  <!-- Preconnect for Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-      .sign {
-        width: min(336px, 46%);
-      }
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
-      h1 {
-        margin: 0;
-        color: var(--text);
-        font-size: clamp(2rem, 4vw, 3.4rem);
-        line-height: 1.07;
-        letter-spacing: -0.03em;
-        font-weight: 700;
-      }
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "A1A",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "description": "AI-powered real estate automation platform for agents, teams, and brokerages.",
+    "url": "https://a1a.com",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/LimitedAvailability",
+      "description": "By invitation only. Private rollout for select brokerages."
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "A1A",
+      "url": "https://a1a.com"
+    }
+  }
+  </script>
+</head>
+<body>
 
-      .sub {
-        margin: 0;
-        font-size: clamp(1rem, 1.8vw, 1.22rem);
-        color: var(--muted);
-        letter-spacing: 0.01em;
-      }
+  <!-- ====================================================================
+       NAVIGATION
+       ==================================================================== -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo" aria-label="A1A home">
+          <div class="nav__logo-mark" aria-hidden="true">A1</div>
+          A1A
+        </a>
+        <div class="nav__links" id="navLinks" role="menubar">
+          <a href="#platform" class="nav__link" role="menuitem">Platform</a>
+          <a href="#capabilities" class="nav__link" role="menuitem">Capabilities</a>
+          <a href="#advantage" class="nav__link" role="menuitem">Advantage</a>
+          <a href="#how-it-works" class="nav__link" role="menuitem">Process</a>
+          <a class="btn btn--primary btn--sm nav__cta" href="#" data-modal="modalAccess" role="menuitem">Request Access</a>
+        </div>
+        <button class="nav__mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-      .soon {
-        display: inline-flex;
-        gap: 10px;
-        align-items: center;
-        border: 1px solid #0d7ff2;
-        background: #e9f3ff;
-        color: #0a3f7a;
-        border-radius: 999px;
-        padding: 10px 16px;
-        font-weight: 700;
-        font-size: 0.95rem;
-      }
+  <!-- ====================================================================
+       HERO
+       ==================================================================== -->
+  <header class="section" id="hero" style="padding-top: 10rem; padding-bottom: 6rem; min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;">
+    <div class="hero__bg-image" style="position: absolute; inset: 0; z-index: 0;">
+      <img src="images/home-farmhouse.png" alt="" aria-hidden="true" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+      <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(6,6,11,0.92) 0%, rgba(6,6,11,0.80) 40%, rgba(6,6,11,0.55) 100%);"></div>
+      <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(6,6,11,1) 0%, transparent 30%);"></div>
+    </div>
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+    <div class="orb orb--blue" aria-hidden="true"></div>
+    <div class="orb orb--teal" aria-hidden="true"></div>
 
-      .dot {
-        width: 8px;
-        height: 8px;
-        border-radius: 999px;
-        background: #5db5ff;
-        box-shadow: 0 0 0 6px rgba(93, 181, 255, 0.18);
-        animation: pulse 1.8s infinite;
-      }
-
-      @keyframes pulse {
-        0%,
-        100% {
-          transform: scale(1);
-          opacity: 1;
-        }
-        50% {
-          transform: scale(1.15);
-          opacity: 0.8;
-        }
-      }
-
-      .cta {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        text-decoration: none;
-        background: #0b66d6;
-        color: #ffffff;
-        border-radius: 999px;
-        padding: 12px 18px;
-        font-weight: 600;
-        font-size: 0.95rem;
-        box-shadow: 0 10px 24px rgba(11, 102, 214, 0.25);
-      }
-
-      .cta:hover {
-        background: #0958ba;
-      }
-
-      .footer {
-        border-top: 1px solid var(--line);
-        padding: 14px 18px;
-        color: #64748b;
-        font-size: 0.84rem;
-        text-align: center;
-      }
-
-      @media (max-width: 640px) {
-        .hero {
-          padding: 40px 16px 48px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <main class="wrap">
-      <section class="card">
-        <div class="hero">
-          <img class="sign" src="./A1A.png" alt="A1A highway style sign" />
-
-          <h1>The Road Home</h1>
-          <p class="sub">Exit A1A is building a cleaner route to real estate growth.</p>
-          <div class="soon"><span class="dot"></span> Coming Soon</div>
-          <a class="cta" href="mailto:jsguxd@gmail.com?subject=Exit%20A1A%20Waitlist">Join the Waitlist</a>
+    <div class="container" style="position: relative; z-index: 1;">
+      <div style="max-width: 860px;">
+        <div data-reveal data-reveal-delay="1">
+          <span class="badge badge--gold" style="margin-bottom: var(--space-xl);">
+            <span class="badge__dot"></span>
+            Private Rollout &mdash; Select Brokerages Only
+          </span>
         </div>
 
-        <div class="footer">
-          <div>Exit A1A • GDP</div>
-          <div>© 2026 GDP. All rights reserved.</div>
+        <h1 data-reveal data-reveal-delay="2" style="font-size: var(--text-hero); font-weight: var(--weight-extrabold); color: var(--color-white); letter-spacing: var(--tracking-tight); line-height: 1.05; margin-bottom: var(--space-xl);">
+          The agents who<br>
+          <span style="background: var(--gradient-accent-alt); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">adopt this win.</span><br>
+          The rest fall behind.
+        </h1>
+
+        <p data-reveal data-reveal-delay="3" style="font-size: var(--text-body-lg); color: var(--color-ash); max-width: 580px; line-height: var(--leading-relaxed); margin-bottom: var(--space-2xl);">
+          A1A is an AI-powered operating system that eliminates the manual work killing your productivity, automates your marketing and research, and gives you a competitive advantage that compounds every day you use it.
+        </p>
+
+        <div class="hero__actions flex flex--gap-lg" data-reveal data-reveal-delay="4" style="margin-bottom: var(--space-4xl);">
+          <a href="#" class="btn btn--primary btn--lg" data-modal="modalAccess">
+            Request Early Access
+            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#platform" class="btn btn--secondary btn--lg">
+            About the Platform
+          </a>
         </div>
-      </section>
-    </main>
-  </body>
+
+        <div class="hero__stats flex flex--gap-xl" data-reveal data-reveal-delay="5" style="padding-top: var(--space-2xl); border-top: var(--border-subtle);">
+          <div class="stat">
+            <div class="stat__number stat__number--accent" data-count="15">15</div>
+            <div class="stat__label">Min CMA vs 8 Hours</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number stat__number--accent" data-count="35">35</div>
+            <div class="stat__label">Hours/Week Recovered</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number stat__number--accent" data-count="90">90+</div>
+            <div class="stat__label">Tasks Automated</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number stat__number--accent" data-count="100">100%</div>
+            <div class="stat__label">Compliance Coverage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       THE PROBLEM
+       ==================================================================== -->
+  <section class="section section--dark" id="problem">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__overline">The Problem</span>
+        <h2 class="section__title">Every hour you spend on paperwork is an hour you lose a deal.</h2>
+        <p class="section__subtitle">The average agent spends 65% of their working week on tasks that generate zero revenue. Manual research, compliance checklists, marketing creation, and follow-up scheduling are consuming the time that should be spent closing.</p>
+      </div>
+
+      <div class="grid grid--3" style="gap: var(--space-2xl);">
+        <div class="card card--accent shimmer" data-reveal data-reveal-delay="1">
+          <div class="card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="card__title">Time Hemorrhage</div>
+          <p class="card__text">4&ndash;8 hours per CMA. 3&ndash;5 hours per week chasing showing feedback. 2&ndash;4 hours managing compliance paperwork per transaction. It compounds until your calendar owns you.</p>
+        </div>
+
+        <div class="card card--accent shimmer" data-reveal data-reveal-delay="2">
+          <div class="card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="card__title">Revenue Bleed</div>
+          <p class="card__text">Leads go cold in minutes, not hours. Every delayed response is a deal handed to your competitor. Industry data shows a 5-minute response yields 8x the contact rate of a 30-minute response.</p>
+        </div>
+
+        <div class="card card--accent shimmer" data-reveal data-reveal-delay="3">
+          <div class="card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="currentColor" stroke-width="1.5"/><line x1="12" y1="9" x2="12" y2="13" stroke="currentColor" stroke-width="1.5"/><line x1="12" y1="17" x2="12.01" y2="17" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="card__title">Compliance Exposure</div>
+          <p class="card__text">Document errors cause closing delays in 20&ndash;25% of transactions. A missed disclosure, an expired contingency, an unsigned addendum&mdash;any one of these can kill a deal or trigger a liability claim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       THE SOLUTION / PLATFORM OVERVIEW
+       ==================================================================== -->
+  <section class="section section--gradient" id="platform" style="position: relative; overflow: hidden;">
+    <div class="orb orb--subtle" style="top: 20%; left: 60%;" aria-hidden="true"></div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="section__header" data-reveal>
+        <span class="section__overline">The Platform</span>
+        <h2 class="section__title">A1A removes friction at every point in your workflow.</h2>
+        <p class="section__subtitle">Not another CRM. Not another tool to learn. A1A is an intelligent operating layer that automates the work you shouldn't be doing so you can focus entirely on closing.</p>
+      </div>
+
+      <div class="grid grid--2" style="gap: var(--space-3xl); align-items: center;">
+        <div data-reveal="slide-left">
+          <div class="gradient-line" style="margin-bottom: var(--space-xl);"></div>
+          <h3 style="font-size: var(--text-h2); font-weight: var(--weight-bold); color: var(--color-white); margin-bottom: var(--space-lg); letter-spacing: var(--tracking-tight);">AI that recommends.<br>You decide. It executes.</h3>
+          <p style="font-size: var(--text-body-lg); color: var(--color-ash); line-height: var(--leading-relaxed); margin-bottom: var(--space-xl);">Every AI action in A1A passes through a human approval gate. The system surfaces insights, drafts communications, scores leads, and prepares reports&mdash;but nothing goes out the door without your sign-off. Full control. Zero busywork.</p>
+
+          <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+            <div class="card__list-item"><strong style="color: var(--color-white);">CMA in 15 minutes</strong> &mdash; not 8 hours</div>
+            <div class="card__list-item"><strong style="color: var(--color-white);">Instant lead scoring</strong> &mdash; know who to call first</div>
+            <div class="card__list-item"><strong style="color: var(--color-white);">Compliance on autopilot</strong> &mdash; every document validated in real time</div>
+            <div class="card__list-item"><strong style="color: var(--color-white);">Marketing that runs itself</strong> &mdash; listings, social, and follow-ups</div>
+            <div class="card__list-item"><strong style="color: var(--color-white);">One platform, every device</strong> &mdash; desktop, tablet, phone</div>
+          </div>
+        </div>
+
+        <div data-reveal="slide-right" style="border-radius: var(--radius-xl); position: relative; min-height: 440px; overflow: hidden;">
+          <img src="images/home-craftsman.png" alt="Luxury Virginia home at twilight — the kind of property A1A agents close" style="width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0;">
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(6,6,11,0.55) 0%, rgba(6,6,11,0.15) 50%, transparent 100%);"></div>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: var(--space-xl) var(--space-2xl); z-index: 1; background: rgba(6,6,11,0.55); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-top: 1px solid rgba(255,255,255,0.08);">
+            <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-accent); letter-spacing: var(--tracking-wider); text-transform: uppercase; margin-bottom: var(--space-md);">Live Platform Metrics</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md);">
+              <div class="stat"><div class="stat__number" style="font-size: 1.75rem; color: #ffffff; text-shadow: 0 1px 6px rgba(0,0,0,0.7);" data-count="847">847</div><div class="stat__label" style="font-size: 0.7rem; text-shadow: 0 1px 4px rgba(0,0,0,0.6);">Leads Scored Today</div></div>
+              <div class="stat"><div class="stat__number" style="font-size: 1.75rem; color: #ffffff; text-shadow: 0 1px 6px rgba(0,0,0,0.7);" data-count="23">23</div><div class="stat__label" style="font-size: 0.7rem; text-shadow: 0 1px 4px rgba(0,0,0,0.6);">CMAs Generated</div></div>
+              <div class="stat"><div class="stat__number" style="font-size: 1.75rem; color: #ffffff; text-shadow: 0 1px 6px rgba(0,0,0,0.7);" data-count="156">156</div><div class="stat__label" style="font-size: 0.7rem; text-shadow: 0 1px 4px rgba(0,0,0,0.6);">Docs Validated</div></div>
+              <div class="stat"><div class="stat__number" style="font-size: 1.75rem; color: #ffffff; text-shadow: 0 1px 6px rgba(0,0,0,0.7);" data-count="12">12</div><div class="stat__label" style="font-size: 0.7rem; text-shadow: 0 1px 4px rgba(0,0,0,0.6);">Listings Launched</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CAPABILITIES / FEATURES
+       ==================================================================== -->
+  <section class="section section--dark" id="capabilities">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__overline">Capabilities</span>
+        <h2 class="section__title">Four engines. One platform. Total operational advantage.</h2>
+      </div>
+
+      <!-- Automation Engine -->
+      <div style="margin-bottom: var(--space-4xl);">
+        <div class="flex flex--gap-sm" style="margin-bottom: var(--space-2xl);" data-reveal>
+          <div class="gradient-line" style="margin-top: 0.5rem;"></div>
+          <div>
+            <h3 style="font-size: var(--text-h2); font-weight: var(--weight-bold); color: var(--color-white); letter-spacing: var(--tracking-tight);">Automation Engine</h3>
+            <p style="color: var(--color-ash); margin-top: var(--space-xs);">Eliminate every task that doesn't require your judgment.</p>
+          </div>
+        </div>
+        <div class="grid grid--3">
+          <div class="card hover-glow" data-reveal data-reveal-delay="1">
+            <div class="card__title">CMA Acceleration</div>
+            <p class="card__text">AI pulls comps, calculates adjustments, writes the market narrative, and generates a branded report. You review and deliver. 15 minutes, not 8 hours.</p>
+          </div>
+          <div class="card hover-glow" data-reveal data-reveal-delay="2">
+            <div class="card__title">Transaction Autopilot</div>
+            <p class="card__text">Contract-to-close timelines generated automatically from your purchase agreement. Escalating deadline alerts. Document validation. Compliance scoring in real time.</p>
+          </div>
+          <div class="card hover-glow" data-reveal data-reveal-delay="3">
+            <div class="card__title">Lead Pipeline Intelligence</div>
+            <p class="card__text">Every lead scored 0&ndash;100 with transparent rationale. Priority queue ranked by conversion probability. Instant acknowledgment within 60 seconds of receipt.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media Engine -->
+      <div style="margin-bottom: var(--space-4xl);">
+        <div class="flex flex--gap-sm" style="margin-bottom: var(--space-2xl);" data-reveal>
+          <div class="gradient-line" style="margin-top: 0.5rem;"></div>
+          <div>
+            <h3 style="font-size: var(--text-h2); font-weight: var(--weight-bold); color: var(--color-white); letter-spacing: var(--tracking-tight);">Social Media Engine</h3>
+            <p style="color: var(--color-ash); margin-top: var(--space-xs);">Your brand is working 24/7 without you.</p>
+          </div>
+        </div>
+        <div class="grid grid--3">
+          <div class="card hover-glow" data-reveal data-reveal-delay="1">
+            <div class="card__title">Done-For-You Content</div>
+            <p class="card__text">AI-generated listing posts, market updates, and educational content tailored to your audience. Sized for every platform. Scheduled automatically. Agent-approved before publishing.</p>
+          </div>
+          <div class="card hover-glow" data-reveal data-reveal-delay="2">
+            <div class="card__title">Market-Aware Positioning</div>
+            <p class="card__text">Content that references real local data&mdash;median prices, DOM trends, inventory shifts. Your social presence is informed by actual market intelligence, not generic templates.</p>
+          </div>
+          <div class="card hover-glow" data-reveal data-reveal-delay="3">
+            <div class="card__title">Always-On Digital Presence</div>
+            <p class="card__text">Monthly content calendars generated automatically. Listing launch sequences, price improvement updates, under-contract announcements, and closing celebrations&mdash;all queued and ready.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intelligence Layer -->
+      <div style="margin-bottom: var(--space-4xl);">
+        <div class="flex flex--gap-sm" style="margin-bottom: var(--space-2xl);" data-reveal>
+          <div class="gradient-line" style="margin-top: 0.5rem;"></div>
+          <div>
+            <h3 style="font-size: var(--text-h2); font-weight: var(--weight-bold); color: var(--color-white); letter-spacing: var(--tracking-tight);">Intelligence Layer</h3>
+            <p style="color: var(--color-ash); margin-top: var(--space-xs);">See what others miss. Act before they react.</p>
+          </div>
+        </div>
+        <div class="grid grid--3">
+          <div class="card hover-glow" data-reveal data-reveal-delay="1">
+            <div class="card__title">Predictive Market Signals</div>
+            <p class="card__text">Neighborhood-level trend detection: rising inventory, accelerating price reductions, shifting absorption rates. Know the market is turning before your competitors feel it.</p>
+          </div>
+          <div class="card hover-glow" data-reveal data-reveal-delay="2">
+            <div class="card__title">Compliance Auditing</div>
+            <p class="card__text">AI validates every document in your transaction file against federal, state, and local requirements. Real-time compliance scoring. Guided remediation. Exportable audit trails.</p>
+          </div>
+          <div class="card hover-glow" data-reveal data-reveal-delay="3">
+            <div class="card__title">Competitive Intelligence</div>
+            <p class="card__text">Monitor competing listings in your farm areas. Track price changes, DOM milestones, and status updates. Buyer demand signals aggregated from portal search activity.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recruitment + Listings -->
+      <div>
+        <div class="flex flex--gap-sm" style="margin-bottom: var(--space-2xl);" data-reveal>
+          <div class="gradient-line" style="margin-top: 0.5rem;"></div>
+          <div>
+            <h3 style="font-size: var(--text-h2); font-weight: var(--weight-bold); color: var(--color-white); letter-spacing: var(--tracking-tight);">Recruitment &amp; Listing Advantage</h3>
+            <p style="color: var(--color-ash); margin-top: var(--space-xs);">You're not competing anymore. You're operating on a different level.</p>
+          </div>
+        </div>
+        <div class="grid grid--3">
+          <div class="card hover-glow" data-reveal data-reveal-delay="1">
+            <div class="card__title">Listing Acquisition</div>
+            <p class="card__text">Identify pre-listing signals before properties hit the market: permit activity, long-term ownership, estate filings. Your prospecting is informed by data, not guesswork.</p>
+          </div>
+          <div class="card hover-glow" data-reveal data-reveal-delay="2">
+            <div class="card__title">Agent Recruitment Edge</div>
+            <p class="card__text">Brokerages using A1A attract top talent by offering a technology advantage that individual agents cannot access independently. Retention increases when agents produce more with less effort.</p>
+          </div>
+          <div class="card hover-glow" data-reveal data-reveal-delay="3">
+            <div class="card__title">Post-Close Revenue Engine</div>
+            <p class="card__text">Move probability scoring identifies past clients likely to transact in the next 12&ndash;24 months. Automated anniversary outreach. Home value updates. The relationship never goes cold.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FOR AGENTS vs FOR BROKERAGES
+       ==================================================================== -->
+  <section class="section section--gradient" id="advantage" style="position: relative; overflow: hidden;">
+    <div class="orb orb--subtle" style="top: 30%; right: -10%;" aria-hidden="true"></div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="section__header" data-reveal>
+        <span class="section__overline">Dual-Sided Value</span>
+        <h2 class="section__title">Built for agents who close. Scaled for brokerages that grow.</h2>
+      </div>
+
+      <div class="comparison" data-reveal>
+        <div class="comparison__col comparison__col--agents">
+          <div class="comparison__label">For Agents &amp; Teams</div>
+          <h3 class="comparison__title">Close more. Work less. Earn more.</h3>
+          <div class="comparison__list">
+            <div class="comparison__item">
+              <svg class="comparison__item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Recover 25&ndash;35 hours per week from eliminated manual tasks</span>
+            </div>
+            <div class="comparison__item">
+              <svg class="comparison__item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>CMA preparation drops from hours to minutes</span>
+            </div>
+            <div class="comparison__item">
+              <svg class="comparison__item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Social media runs itself&mdash;always on, always current, always branded</span>
+            </div>
+            <div class="comparison__item">
+              <svg class="comparison__item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Compliance validated in real time&mdash;no more closing-day surprises</span>
+            </div>
+            <div class="comparison__item">
+              <svg class="comparison__item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Every lead scored and prioritized before you pick up the phone</span>
+            </div>
+            <div class="comparison__item">
+              <svg class="comparison__item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Market intelligence delivered daily&mdash;no manual research required</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comparison__col comparison__col--brokerages">
+          <div class="comparison__label">For Brokerages &amp; Owners</div>
+          <h3 class="comparison__title">Scale faster. Recruit better. Retain talent.</h3>
+          <div class="comparison__list">
+            <div class="comparison__item">
+              <svg class="comparison__item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Technology advantage that attracts top-producing agents</span>
+            </div>
+            <div class="comparison__item">
+              <svg class="comparison__item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Brokerage-wide compliance dashboard&mdash;zero audit anxiety</span>
+            </div>
+            <div class="comparison__item">
+              <svg class="comparison__item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Per-agent KPI tracking with drill-down analytics</span>
+            </div>
+            <div class="comparison__item">
+              <svg class="comparison__item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Configurable lead routing&mdash;round-robin, score-based, geography-based</span>
+            </div>
+            <div class="comparison__item">
+              <svg class="comparison__item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Agents produce more volume with less support staff</span>
+            </div>
+            <div class="comparison__item">
+              <svg class="comparison__item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Retention increases when agents earn more with your tools</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       HOW IT WORKS
+       ==================================================================== -->
+  <section class="section section--dark" id="how-it-works">
+    <div class="container container--narrow">
+      <div class="section__header" data-reveal>
+        <span class="section__overline">How It Works</span>
+        <h2 class="section__title">Three steps. Immediate impact.</h2>
+        <p class="section__subtitle">No six-month implementation. No training academies. A1A integrates into your existing workflow and starts delivering value on day one.</p>
+      </div>
+
+      <div data-reveal>
+        <div class="step">
+          <div class="step__number">01</div>
+          <div class="step__content">
+            <div class="step__title">Connect Your Data</div>
+            <p class="step__text">Link your MLS access and import your existing pipeline. A1A ingests your active leads, listings, and transaction history. Setup takes less than 30 minutes. Your data stays yours&mdash;we never share, sell, or train on your proprietary information.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__number">02</div>
+          <div class="step__content">
+            <div class="step__title">AI Activates Across Your Workflow</div>
+            <p class="step__text">Within hours, your leads are scored, your compliance gaps are identified, your marketing calendar is generated, and your CMA engine is ready to produce branded reports. The system learns your preferences and adapts&mdash;every interaction makes it sharper.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__number">03</div>
+          <div class="step__content">
+            <div class="step__title">You Close. A1A Handles Everything Else.</div>
+            <p class="step__text">Focus on relationships, negotiations, and closings. A1A manages the rest: document tracking, deadline enforcement, marketing distribution, follow-up sequences, market monitoring, and compliance auditing. Your only job is the work that only you can do.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       SOCIAL PROOF
+       ==================================================================== -->
+  <section class="section section--gradient" id="proof">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__overline">Early Access Cohort</span>
+        <h2 class="section__title">What high-performance teams are saying.</h2>
+      </div>
+
+      <div class="grid grid--3" style="gap: var(--space-2xl);">
+        <div class="testimonial" data-reveal data-reveal-delay="1">
+          <div class="testimonial__quote">We cut our CMA prep time from a full afternoon to 15 minutes. That alone freed up enough hours to take on four additional listings last quarter. The compliance engine caught two disclosure issues that would have delayed closings.</div>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">MR</div>
+            <div>
+              <div class="testimonial__name">Marcus Reynolds</div>
+              <div class="testimonial__role">Top Producer, Fairfax County &mdash; 42 Transactions/Year</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial" data-reveal data-reveal-delay="2">
+          <div class="testimonial__quote">The social media engine eliminated our need for a dedicated marketing coordinator. Content is generated, scheduled, and published with market data I would have had to pull manually. My digital presence has never been stronger.</div>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">SK</div>
+            <div>
+              <div class="testimonial__name">Sarah Kim</div>
+              <div class="testimonial__role">Team Lead, Arlington &mdash; 6 Agents, $85M Volume</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial" data-reveal data-reveal-delay="3">
+          <div class="testimonial__quote">As a broker, the compliance dashboard alone justified the investment. I can see every active transaction's document status in real time. Before A1A, I wouldn't find out about missing disclosures until the week of closing. That risk is gone.</div>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">DW</div>
+            <div>
+              <div class="testimonial__name">David Washington</div>
+              <div class="testimonial__role">Managing Broker &mdash; 28 Agents, NoVA Region</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FINAL CTA
+       ==================================================================== -->
+  <section class="section section--dark" id="access" style="position: relative; overflow: hidden;">
+    <div style="position: absolute; inset: 0; z-index: 0;">
+      <img src="images/home-modern.png" alt="" aria-hidden="true" style="width: 100%; height: 100%; object-fit: cover; object-position: center 40%; opacity: 0.2; filter: blur(2px);">
+      <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, var(--color-void) 0%, transparent 30%, transparent 70%, var(--color-void) 100%);"></div>
+    </div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="cta-banner" data-reveal="scale">
+        <div>
+          <span class="badge badge--gold" style="margin-bottom: var(--space-xl);">
+            <span class="badge__dot"></span>
+            Limited Access &mdash; By Invitation
+          </span>
+        </div>
+        <h2 class="cta-banner__title">The window is open.<br>It won't stay open.</h2>
+        <p class="cta-banner__text">A1A is onboarding select brokerages and high-performance teams in the Northern Virginia market. Early access includes priority onboarding, direct product input, and preferred pricing that will not be available at general release.</p>
+        <div class="cta-banner__actions">
+          <a href="#" class="btn btn--primary btn--lg" data-modal="modalAccess">
+            Apply for Early Access
+            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#" class="btn btn--secondary btn--lg" data-modal="modalDemo">Schedule Private Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="/" class="nav__logo" style="margin-bottom: 0;">
+            <div class="nav__logo-mark" aria-hidden="true">A1</div>
+            A1A
+          </a>
+          <p class="footer__brand-text">The most advanced AI-powered real estate automation platform. Built for agents, teams, and brokerages who refuse to compete on effort alone.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Platform</div>
+          <a href="#capabilities" class="footer__link">Automation Engine</a>
+          <a href="#capabilities" class="footer__link">Social Media Engine</a>
+          <a href="#capabilities" class="footer__link">Intelligence Layer</a>
+          <a href="#capabilities" class="footer__link">Compliance Auditing</a>
+        </div>
+        <div>
+          <div class="footer__col-title">Company</div>
+          <a href="about.html" class="footer__link">About</a>
+          <a href="privacy.html" class="footer__link">Privacy Policy</a>
+          <a href="terms.html" class="footer__link">Terms of Service</a>
+        </div>
+        <div>
+          <div class="footer__col-title">Access</div>
+          <a href="#" class="footer__link" data-modal="modalAccess">Request Early Access</a>
+          <a href="#" class="footer__link" data-modal="modalDemo">Schedule Demo</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 A1A Realty. All rights reserved.</span>
+        <span>Northern Virginia &mdash; Private Rollout</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       MODALS
+       ==================================================================== -->
+
+  <!-- Early Access Modal -->
+  <div class="modal" id="modalAccess" role="dialog" aria-modal="true" aria-labelledby="modalAccessTitle">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <div class="modal__card">
+        <button class="modal__close" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M15 5L5 15M5 5l10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+
+        <span class="badge badge--gold" style="margin-bottom: var(--space-lg);">
+          <span class="badge__dot"></span>
+          Limited Availability
+        </span>
+        <h2 id="modalAccessTitle" class="modal__title">Request Early Access</h2>
+        <p class="modal__subtitle">Join the private rollout. We're onboarding select agents, teams, and brokerages in the Northern Virginia market.</p>
+
+        <form class="modal__form" id="formAccess" action="https://formsubmit.co/jon@graysondp.com" method="POST">
+          <input type="hidden" name="_subject" value="A1A Early Access Request">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="">
+          <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_autoresponse" value="Thank you for requesting early access to A1A. We'll review your application and be in touch within 48 hours.">
+          <div class="form-group">
+            <label class="form-label" for="access-name">Full Name</label>
+            <input class="form-input" type="text" id="access-name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="access-email">Email</label>
+            <input class="form-input" type="email" id="access-email" name="email" placeholder="jane@brokerage.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="access-phone">Phone</label>
+            <input class="form-input" type="tel" id="access-phone" name="phone" placeholder="(703) 555-0100">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="access-role">I am a&hellip;</label>
+            <select class="form-input" id="access-role" name="role" required>
+              <option value="" disabled selected>Select your role</option>
+              <option value="agent">Individual Agent</option>
+              <option value="team-lead">Team Lead</option>
+              <option value="broker">Broker / Owner</option>
+              <option value="admin">Brokerage Admin / Ops</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="access-brokerage">Brokerage Name</label>
+            <input class="form-input" type="text" id="access-brokerage" name="brokerage" placeholder="Your brokerage">
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg" style="width: 100%; justify-content: center;">
+            Submit Request
+            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+
+        <div class="modal__success" id="successAccess" style="display: none;">
+          <div style="font-size: 2.5rem; margin-bottom: var(--space-lg);">&#10003;</div>
+          <h3 class="modal__title" style="font-size: var(--text-h3);">Request Received</h3>
+          <p class="modal__subtitle">We'll review your application and be in touch within 48 hours. Keep an eye on your inbox.</p>
+          <button class="btn btn--secondary btn--lg modal__close-btn" style="margin-top: var(--space-xl);">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Demo Modal -->
+  <div class="modal" id="modalDemo" role="dialog" aria-modal="true" aria-labelledby="modalDemoTitle">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <div class="modal__card">
+        <button class="modal__close" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M15 5L5 15M5 5l10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+
+        <span class="badge" style="margin-bottom: var(--space-lg);">
+          <span class="badge__dot"></span>
+          Private Demo
+        </span>
+        <h2 id="modalDemoTitle" class="modal__title">Schedule a Demo</h2>
+        <p class="modal__subtitle">See A1A in action. We'll walk you through the platform with your own data and workflows.</p>
+
+        <form class="modal__form" id="formDemo" action="https://formsubmit.co/jon@graysondp.com" method="POST">
+          <input type="hidden" name="_subject" value="A1A Demo Request">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="">
+          <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_autoresponse" value="Thank you for requesting a demo of A1A. We'll reach out within 24 hours to schedule a time.">
+          <div class="form-group">
+            <label class="form-label" for="demo-name">Full Name</label>
+            <input class="form-input" type="text" id="demo-name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="demo-email">Email</label>
+            <input class="form-input" type="email" id="demo-email" name="email" placeholder="jane@brokerage.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="demo-phone">Phone</label>
+            <input class="form-input" type="tel" id="demo-phone" name="phone" placeholder="(703) 555-0100">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="demo-role">I am a&hellip;</label>
+            <select class="form-input" id="demo-role" name="role" required>
+              <option value="" disabled selected>Select your role</option>
+              <option value="agent">Individual Agent</option>
+              <option value="team-lead">Team Lead</option>
+              <option value="broker">Broker / Owner</option>
+              <option value="admin">Brokerage Admin / Ops</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="demo-team-size">Team / Brokerage Size</label>
+            <select class="form-input" id="demo-team-size" name="team_size">
+              <option value="" disabled selected>Select size</option>
+              <option value="solo">Solo Agent</option>
+              <option value="2-5">2 &ndash; 5 Agents</option>
+              <option value="6-20">6 &ndash; 20 Agents</option>
+              <option value="21-50">21 &ndash; 50 Agents</option>
+              <option value="50+">50+ Agents</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="demo-message">What are you most interested in?</label>
+            <textarea class="form-input" id="demo-message" name="message" rows="3" placeholder="CMA automation, compliance, marketing, lead scoring&hellip;"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg" style="width: 100%; justify-content: center;">
+            Request Demo
+            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+
+        <div class="modal__success" id="successDemo" style="display: none;">
+          <div style="font-size: 2.5rem; margin-bottom: var(--space-lg);">&#10003;</div>
+          <h3 class="modal__title" style="font-size: var(--text-h3);">Demo Requested</h3>
+          <p class="modal__subtitle">We'll reach out within 24 hours to schedule a time that works for you.</p>
+          <button class="btn btn--secondary btn--lg modal__close-btn" style="margin-top: var(--space-xl);">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/animations.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/modals.js" defer></script>
+
+</body>
 </html>
